@@ -1,0 +1,73 @@
+<div>
+    <span class="dp_title_222">CONTACT US</span>
+</div>
+<div class="company_content" style="color:#333;">
+    <h5>Would you like to send us a message?</h5>
+    <hr class="style3">
+    <form>
+        <ul class="contact_us_ul">
+            <li>
+                <h4>Please choose a topic</h4>
+                <div>
+                    <select id="topic" class="form-control">
+                        <option value="0">Account Restrictions</option>
+                        <option value="1">Affiliate Inquires</option>
+                        <option value="2">Bonus Issues</option>
+                        <option value="3">Store Problems</option>
+                        <option value="4">Contest Problems</option>
+                        <option value="5">Login Problems</option>
+                        <option value="6">My Account</option>
+                        <option value="7">Other</option>
+                        <option value="8">Press</option>
+                        <option value="9">Suggestions</option>
+                        <option value="10">Technical Problems</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <h4>e-mail</h4>
+                <div>
+                    <?php
+                    if($u_id) {
+                    ?>
+                    <input id="mail" class="form-control" disabled value='<?=$u_id?>'> 
+                    <?php
+                    } else {
+                    ?>
+                    <input id="mail" class="form-control">
+                    <?php
+                    }
+                    ?>
+                </div>
+            </li>
+            <li>
+                <h4>Subject</h4>
+                <div>
+                    <input id="subject" class="form-control">
+                    <p><span id="input_subject" class="now_input_textarea dp_font_ff8a00">0</span>/200 character max (Alphabet, Number, !@#$%^&*)</p>
+                </div>
+            </li>
+            <li>
+                <h4>Message</h4>
+                <div>
+                    <textarea id="message" style="width:100%; height: 150px"></textarea>
+                    <p><span id="input_message" class="now_input_textarea dp_font_ff8a00">0</span>/2000 character max (Alphabet, Number, !@#$%^&*)</p>
+                </div>
+            </li>
+            <li>
+                <div id="g-recaptcha"></div> <br>
+                <button class="btn btn-primary btn_submit_contact">SUBMIT</button>
+            </li>
+            <li>
+                <div class="alert alert-warning" role="alert">
+                    <h5>For additional inquiries, please contact us via email below,</h5>
+                    E-mail : support@spo-bit.com
+                    <hr>
+                    <h5>Support Hours</h5>
+                    Monday ~ Friday : 09:00 ~ 18:00 (UTC+09:00)<br>
+                    Saturday ~ Sunday : 09:00 ~ 14:00 (UTC+09:00)
+                </div>
+            </li>
+        </ul>
+    </form>
+</div>

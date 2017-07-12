@@ -1,0 +1,13 @@
+<?php
+?>
+<script>
+    $('.btn_go_lobby').click(function(){
+        location.replace('index.php?menu=lobby');
+    });
+    $('.btn_go_lineups').click(function(){
+        location.replace('index.php?menu=lineups');
+    });
+    $('.btn_go_store').click(function(){
+        location.replace('index.php?menu=store');
+    });
+</script>
